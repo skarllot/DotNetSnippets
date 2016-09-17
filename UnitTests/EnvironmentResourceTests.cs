@@ -12,6 +12,7 @@ namespace UnitTests
         const string AggregateException_ctor_InnerExceptionNull = "AggregateException_ctor_InnerExceptionNull";
         const string AggregateException_DeserializationFailure = "AggregateException_DeserializationFailure";
         const string AggregateException_ToString = "AggregateException_ToString";
+        const string Task_Dispose_NotCompleted = "Task_Dispose_NotCompleted";
 
         [TestCase(AggregateException_ctor_DefaultMessage, EnUs, Result = "One or more errors occurred.")]
         [TestCase(AggregateException_ctor_DefaultMessage, PtBr, Result = "Um ou mais erros.")]
@@ -21,6 +22,8 @@ namespace UnitTests
         [TestCase(AggregateException_DeserializationFailure, PtBr, Result = "O fluxo da serialização não contém exceções internas.")]
         [TestCase(AggregateException_ToString, EnUs, Result = "{0}{1}---> (Inner Exception #{2}) {3}{4}{5}")]
         [TestCase(AggregateException_ToString, PtBr, Result = "{0}{1}---> (Exceção Interna N° {2}) {3}{4}{5}")]
+        [TestCase(Task_Dispose_NotCompleted, EnUs, Result = "A task may only be disposed if it is in a completion state (RanToCompletion, Faulted or Canceled).")]
+        [TestCase(Task_Dispose_NotCompleted, PtBr, Result = "Uma tarefa só pode ser descartada se estiver em estado de conclusão (RanToCompletion, Faulted ou Canceled).")]
         public string GetStringTest(string key, string cultureName)
         {
             return EnvironmentResource.GetString(key, cultureName);

@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="EnvironmentResourceTests.cs" />
     <Compile Include="InheritableStaticTests.cs" />
+    <Compile Include="TaskTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

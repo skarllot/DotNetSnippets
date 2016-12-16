@@ -36,6 +36,7 @@
     <Compile Include="EnvironmentResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="InheritableStatic.cs" />
+    <Compile Include="Variance.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

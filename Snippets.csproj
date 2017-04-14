@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnvironmentResource.cs" />
+    <Compile Include="FluentStyle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="InheritableStatic.cs" />
     <Compile Include="Variance.cs" />
